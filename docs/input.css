@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .active__bottom {
+        @apply border-solid border-b-4 border-b-white;
+    }
+    .active__right {
+        @apply border-solid border-r-4 border-r-white;
+    }
+    .active__number {
+        @apply focus:text-blue-900 bg-white;
+    }
+}
+
+.active__span {
+    background-color: white;    
+    backdrop-filter: blur(80px)
+
+}
+
+
+

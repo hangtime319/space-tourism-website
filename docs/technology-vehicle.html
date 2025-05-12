@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Bellefair&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/favicon-32x32.png"
+    />
+    <script src="./app.js" defer></script>
+
+    <link href="./output.css" rel="stylesheet"/>
+
+    <title>Frontend Mentor | Space tourism website</title>
+  </head>
+  <body class="bg-[url('./assets/technology/background-technology-desktop.jpg')] bg-no-repeat bg-cover bg-fixed max-md:bg-[url('./assets/technology/background-technology-tablet.jpg')] max-md:bg-no-repeat max-sm:bg-[url('./assets/technology/background-technology-mobile.jpg')] animate-fade-in">
+
+    <header class="flex justify-between items-center py-4 max-md:py-0 max-sm:items-start">
+      <div class="flex items-center relative max-sm:justify-between max-sm:py-4 max-sm:w-screen">
+        <img class="mx-8" src="./assets/shared/logo.svg" alt="Logo" />
+        <div class="w-[35em] h-[1px] bg-white/25 absolute left-52 max-md:hidden"></div>
+        <img class="hidden max-sm:block max-sm:mr-6" id="menu_mobile" src="./assets/shared/icon-hamburger.svg" alt="Menu mobile">
+      </div>
+      <nav class="bg-white/5 py-8 pr-12 pl-36 max-md:pl-32 max-sm:bg-blue-900/95 max-sm:backdrop-blur-3xl max-sm:hidden max-sm:fixed max-sm:h-dvh max-sm:w-64 max-sm:right-0 max-sm:p-0" id="nav_menu">
+        <img class="hidden absolute top-4 right-4 pointer" src="./assets/shared/icon-close.svg" alt="X" id="close_menu">
+        <ul class="flex justify-between items-center gap-24 *:font-barlow-condensed *:font-thin *:*:tracking-widest *:uppercase *:text-white max-md:gap-12 max-sm:flex-col max-sm:items-start max-sm:justify-start max-sm:mt-32 max-sm:pl-8 list__menu">
+          <li class="max-sm:w-full max-sm:hover:active__right">
+            <a class="transition-all md:hover:border-solid md:hover:border-b-4 md:hover:border-b-white/70 pb-8" href="index.html"><span class="font-medium">00</span> Home</a>
+          </li>
+          <li class="max-sm:w-full max-sm:hover:active__right">
+            <a class="transition-all md:hover:border-solid md:hover:border-b-4 md:hover:border-b-white/70 pb-8" href="destination-moon.html"><span class="font-medium">01</span> Destination</a>
+          </li>
+          <li class="max-sm:w-full max-sm:hover:active__right">
+            <a class="transition-all md:hover:border-solid md:hover:border-b-4 md:hover:border-b-white/70 pb-8" href="crew-commander.html"><span class="font-medium">02</span> Crew</a>
+          </li>
+          <li class="max-sm:w-full max-sm:hover:active__right">
+            <a class="transition-all md:hover:border-solid md:hover:border-b-4 md:hover:border-b-white/70 pb-8 sm:active__bottom" href="technology-vehicle.html"><span class="font-medium">03</span> Technology</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="py-12 pl-44 max-md:p-0 max-md:mb-8">
+        <h1 class="font-barlow-condensed font-normal text-white text-3xl uppercase tracking-widest mb-20 max-md:text-xl max-md:mt-10 max-md:ml-8 max-sm:text-base max-sm:text-center max-sm:ml-0"><span class="font-bold text-white/15 mr-3">03</span> Space launch 101</h1>
+
+        <div class="flex gap-5 max-md:flex-col-reverse">
+          <div class="flex items-center justify-center gap-16 max-md:flex-col max-md:mt-4">
+            <div class="flex flex-col gap-8 *:size-20 *:font-bellefair *:text-3xl *:text-center max-md:flex-row *:max-md:size-14 max-md:gap-4 *:max-md:text-2xl *:max-sm:size-10 *:max-sm:text-lg list_technology">
+              <button class="transition-all rounded-full border-solid border-[1px] text-white border-blue-300/30 hover:border-white">1</button>
+              <button class="transition-all rounded-full border-solid border-[1px] text-white border-blue-300/30 hover:border-white">2</button>
+              <button class="transition-all rounded-full border-solid border-[1px] text-white border-blue-300/30 hover:border-white">3</button>
+            </div>
+
+            <div class="flex flex-col gap-5 max-md:items-center">
+              <p class="font-bellefair text-3xl text-white/50 uppercase max-md:text-2xl max-sm:text-lg">The terminology...</p>
+              <h2 class="font-bellefair text-6xl text-white uppercase max-md:text-4xl max-sm:text-2xl" id="name_technology">Launch vehicle</h2>
+
+              <p class="font-barlow text-blue-300 text-lg leading-8 w-4/5 max-md:text-center max-md:text-base max-md:w-2/3 max-sm:text-sm max-sm:w-80" id="description_technology">
+                A launch vehicle or carrier rocket is a rocket-propelled vehicle
+                used to carry a payload from Earth's surface to space, usually to
+                Earth orbit or beyond. Our WEB-X carrier rocket is the most
+                powerful in operation. Standing 150 metres tall, it's quite an
+                awe-inspiring sight on the launch pad!
+              </p>
+            </div>
+          </div>
+
+          <img class="w-full object-cover max-md:h-[45vh] max-sm:h-80" id="image_technology" src="./assets/technology/image-launch-vehicle-portrait.jpg" alt="Launch Vehicle"/>
+          
+        </div>
+        
+      </section>
+    </main>
+  </body>
+</html>
