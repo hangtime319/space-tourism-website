@@ -9,14 +9,15 @@
     .active__right {
         @apply border-solid border-r-4 border-r-white;
     }
-    .active__number {
-        @apply focus:text-blue-900 bg-white;
-    }
 }
 
 .active__span {
     background-color: white;    
 }
 
+.active__number {
+    color: #0B0D17 !important;
+    background: #fff !important;
+}
 
 
