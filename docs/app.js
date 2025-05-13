@@ -45,7 +45,7 @@ async function loadDestinationsData() {
 }
 
 function updateDestinationInfo(destination) {
-  // Adiciona a classe de animação aos elementos antes de atualizar o conteúdo
+  
   planetImage.classList.add("animate-fade-in");
   namePlanet.classList.add("animate-fade-in");
   descPlanet.classList.add("animate-fade-in");
@@ -65,7 +65,7 @@ function updateDestinationInfo(destination) {
     descPlanet.classList.remove("animate-fade-in");
     distancePlanet.classList.remove("animate-fade-in");
     travelPlanet.classList.remove("animate-fade-in");
-  }, 500); // Ajuste o tempo conforme a duração da sua animação
+  }, 500); 
 }
 
 document.addEventListener("DOMContentLoaded", async () => {
@@ -138,7 +138,7 @@ function updateCrewInfo(crew) {
     nameCrew.classList.remove("animate-fade-in");
     bioCrew.classList.remove("animate-fade-in");
     imageCrew.classList.remove("animate-fade-in");
-  }, 500); // Ajuste o tempo conforme a duração da sua animação
+  }, 500);
 }
 
 document.addEventListener("DOMContentLoaded", async () => {
@@ -201,7 +201,7 @@ function updateTechnologyInfo(technology) {
     nameTec.classList.remove("animate-fade-in");
     descriptionTec.classList.remove("animate-fade-in");
     imageTec.classList.remove("animate-fade-in");
-  }, 500); // Ajuste o tempo conforme a duração da sua animação
+  }, 500);
 }
 
 document.addEventListener("DOMContentLoaded", async () => {
